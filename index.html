@@ -4,9 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>RevoU</title>
 </head>
 <body>
+    <header class="header-wrapper">
+        <img src="img/logo-revou.jpg" alt="revou logo">
+        <div class="nav-bar">
+            <div class="nav-item"><a href="index.html">Home</a></div>
+            <div class="nav-item"><a href="profile.html">Our Profile</a></div>
+            <div class="nav-item">Portofolio</div>
+            <div class="nav-item">Message Us</div>
+        </div>
+    </header>
+
+    <div id="hero-section" class="hero">
+        <h1> Hi <span id="nama"></span></h1>
+        <h3> Welcome to RevoU !</h3>
+    </div>
     
+    <div id="headquarters-section">
+        <h2> Our Headquarters</h2>
+        <div class="wrapper">
+        <div class="headquarters-image-container">
+            <div class="headquarters-image">
+            <img src="img/jakarta.jpg" alt="jakarta"></div>
+                <h3>Jakarta</h3>  
+        </div>
+        <div class="headquarters-image-container">
+            <div class="headquarters-image">
+            <img src="img/Bandung.jpg" alt="bandung"></div>
+                <h3>Bandung</h3>
+        </div>
+        <div class="headquarters-image-container">
+            <div class="headquarters-image">
+            <img src="img/Surabaya.jpg" alt="surabaya"></div>
+                <h3>Surabaya</h3>
+        </div>
+        </div>
+    </div>
+    <div id="form-wrapper" class="form-wrapper">
+        <form id="message-us" class="message-us" onsubmit="return validateForm()">
+            <h2>Message us!</h2>
+            Nama : <input type="text" name="full-name" id="full-name" />
+            Tanggal Lahir : <input type="date" name="birth-date" id="birth-date" />
+            Jenis Kelamin :
+                <input type="radio" name="gender" id="male" value="male" />
+                <label for="male">Laki-laki</label>
+                <input type="radio" name="gender" id="female" value="female" />
+                <label for="female">Perempuan</label>
+           Pesan : <textarea name="messages" id="messages"></textarea>
+            <input type="submit" value="Submit"/>
+        </form>
+        
+        <div id="form-output" class="form-output">
+            <h3>Nama : <span id="sender-full-name"></span></h3>
+            <h3>Tanggal lahir: <span id="sender-birth-date"></span></h3>
+            <h3>Jenis Kelamin : <span id="sender-gender"></span></h3>
+            <h3>Pesan : <span id="sender-messages"></span></h3>
+        </div>
+            <script src="js/script.js"></script>
+    </div>
+    <footer>
+        <h4>Created By Revou</h4>
+    </footer>
 </body>
+
 </html>

@@ -1,0 +1,104 @@
+* {
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+
+
+header img {
+    height: 3em;
+    border-radius: 50%;
+}
+
+.nav-bar {
+    display: flex;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.nav-item {
+    text-align: center;
+    padding: 5px 1em;
+    width: 80px;
+    border-right: 1px solid black;
+}
+
+.nav-bar:last-child {
+    border-right: none;
+}
+
+.hero {
+    background-image: url(../img/banner\ revou.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 550px;
+    width: 944px;
+    color: cornflowerblue;
+    margin: auto;
+}
+
+#headquarters-section {
+   border: 1px solid black;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.headquarters-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1em;
+}
+
+.headquarters-image {
+    border-radius: 50%;
+    overflow: hidden;
+    float: left;
+}
+
+.headquarters-image > img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
+}
+
+.form-wrapper {
+    display: flex;
+}
+
+.message-us {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 5%;
+}
+
+.message-us input {
+    width: fit-content;
+}
+
+.message-us textarea {
+    width: 50%;
+}
+.form-output {
+    display: flex;
+    flex-direction: column;
+    position: inherit;
+    width: 50%;
+    padding: 5%;
+}
+
+footer {
+    text-align: end;
+}
