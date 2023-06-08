@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/profile.css">
+    <title> Our Profile</title>
+</head>
+<body>
+    <header class="header-wrapper">
+        <img src="img/logo-revou.jpg" alt="revou logo">
+        <div class="nav-bar">
+            <div class="nav-item"><a href="index.html">Home</a></div>
+            <div class="nav-item"><a href="profile.html">Our Profile</a></div>
+            <div class="nav-item">Portofolio</div>
+            <div class="nav-item">Message Us</div>
+        </div>
+    </header>
+    <main>
+        <div class="img-slideshow" id="img-slideshow">
+            <img class="slide" src="img/Revou-mc.png" />
+            <img class="slide" src="img/Revou-se.jpg" />
+            <img class="slide" src="img/Revou-p.png" />
+            <button onclick="plusDivs(-1)">Previous</button>
+            <button onclick="plusDivs(1)">Next</button> 
+        </div>
+
+        <script>
+            var slides = document.querySelectorAll('.slide');
+            var currentSlide = 0;
+            var slideInterval = setInterval(nextSlide,5000);
+            
+
+            function nextSlide() {
+                slides[currentSlide].className = 'slide';
+                currentSlide = (currentSlide+1%slides.length);
+                slides[currentSlide].className = 'slide active';
+            }
+        </script>
+        <div class="company-about" id="company-about">
+            <p></p>
+        </div>
+        <div class="company-purpose" id="company-purpose">
+            <p></p>
+            <p></p>
+        </div>
+    </main>
+    <footer>
+    <h4>Created By Revou</h4>
+    </footer>
+</body>
+</html>
